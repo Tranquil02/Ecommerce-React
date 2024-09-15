@@ -1,0 +1,87 @@
+/* navbar.css */
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  border-bottom: 2px solid #918f8f;
+}
+
+.Logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.options ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar .options li {
+  margin: 5px 20px;
+  font-size: 18px;
+  /* font-weight: 500; */
+  /* padding: 10px 0; */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.options li:hover {
+  color: #ff6347; 
+  font-weight: 500;
+  border-bottom: 2px solid #ff6347;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 10px 50px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: #f2f1f1;;
+  font-size: 15px;
+}
+
+.search input::placeholder {
+  color: #585858;
+}
+
+.search-icon {
+    position: absolute;
+    right: 8px;
+    font-size: 16px;
+    color: #191818;
+    cursor: pointer;
+  }
+  
+.search-icon:hover{
+  color: #ff6347;
+}
+
+.others {
+    display: flex;
+    align-items: center;
+    margin-left: -15px;
+  }
+  
+  .icon {
+    margin-left: 30px;
+    font-size: 25px;
+    color: #343434;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #ff6347; /* Change to your preferred hover color */
+  }

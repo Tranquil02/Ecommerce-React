@@ -1,0 +1,44 @@
+/* sideC.css */
+
+.SideOptions {
+  width: 250px;
+  height: fit-content;
+  background-color: white;
+  border-right: 2px solid #aeaaaa;
+  padding:10px 20px;
+}
+
+.Soptions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Soptions li {
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.Soptions li:hover {
+  background-color: #ff6347;
+  color: white;
+}
+
+
+
+@media (max-width: 768px) {
+  .SideOptions {
+    width: 100%;
+    padding: 10px;
+    border-right: none;
+    box-shadow: none;
+  }
+
+  .Soptions li {
+    font-size: 14px;
+  }
+}

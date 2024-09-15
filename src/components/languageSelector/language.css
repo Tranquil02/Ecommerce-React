@@ -1,0 +1,23 @@
+.language-selector {
+    margin: 5px;
+}
+
+.language-selector label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.language-selector select {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}

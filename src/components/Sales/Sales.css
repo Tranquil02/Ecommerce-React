@@ -1,0 +1,170 @@
+.sales-container {
+  padding: 50px 20px;
+  border-bottom: 2px solid rgb(162, 161, 161);
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Sales-date{
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #d9534f;
+    padding: 18px;
+    border-radius: 8px;
+    border-left: 24px solid #d9534f;;
+}
+.sales-container .Sale-heading {
+  font-size: 2rem;
+  margin: 30px 0;
+  text-align: left;
+  font-family: sans-serif;
+
+}
+
+.product-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px; /* Space between product cards */
+
+  /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+  -webkit-overflow-scrolling: touch; /* Enables smooth scrolling */
+}
+
+.product-scroll-container::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Webkit browsers */
+}
+
+.product-scroll-container {
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+.product-scroll-container {
+  overflow: -moz-scrollbars-none; /* Hides scrollbar for older versions of Firefox */
+}
+.product-card {
+  position: relative;
+  flex: 0 0 auto; /* Prevent stretching */
+  max-width: 250px; /* Set a fixed width or max-width */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 46px;
+  overflow: hidden;
+  text-align: left;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between sale price and actual price */
+  margin-bottom: 10px;
+}
+
+.Sale-price {
+  color: #d9534f; /* Sale price color */
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.Actual-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.discount-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d9534f; /* Discount background color */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.icon-container {
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.icon-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem; /* Adjust size as needed */
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.icon-container button:hover {
+  color: #d9534f; /* Change color on hover */
+}
+
+.Add-Cart {
+  position: absolute;
+  bottom: -50px; /* Hide button initially */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00080b;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: bottom 0.3s ease;
+}
+.Add-Cart:hover {
+  background-color: #dddbda;
+  color: #00080b;
+  font-weight: 600;
+}
+
+.product-card:hover .Add-Cart {
+  bottom: 10px; /* Show button on hover */
+}
+
+.view-all-button {
+  background-color: #d9534f;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.view-all-button:hover {
+  background-color: #ec971f;
+}
