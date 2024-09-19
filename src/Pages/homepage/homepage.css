@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,4 +7,5 @@
 }
 .firstContent{
     display: flex;
+    justify-content: center;
 }

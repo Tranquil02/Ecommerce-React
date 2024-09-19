@@ -1,0 +1,33 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  margin: 16px 162px;
+  font-size: 1.125rem; /* Tailwind's text-lg */
+  font-weight: 600;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  font-size: 2rem; /* Tailwind's text-2xl */
+  color: black;
+}
+
+.label {
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  color: #6b7280; /* Tailwind's gray-500 */
+}
+
+.separator {
+  color: #f87171; /* Tailwind's red-400 */
+  margin: 0 8px;
+}
+
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+}

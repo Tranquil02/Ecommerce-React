@@ -1,0 +1,127 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins is loaded */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 19px;
+    max-width: 250px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section p {
+    margin: 5px 0; /* Adding margin for paragraphs */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+.subscribe-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none; /* Remove outline on focus */
+}
+
+.subscribe-form input:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.subscribe-form button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.app-links img {
+    width: 120px;
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex; /* Ensure social icons are in a row */
+    align-items: center; /* Center them vertically */
+}
+
+.social-icons i {
+    margin-right: 18px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    font-size: 12px;
+    color: #666666;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input {
+        margin-bottom: 10px; /* Space between input and button */
+    }
+}

@@ -27,7 +27,7 @@ export const Navbar = () => {
                 <i className="fas fa-heart"></i>
             </div>
             <div className='icon'>
-            <i class="fa-duotone fa-solid fa-cart-shopping"></i>
+            <i className="fa-duotone fa-solid fa-cart-shopping"></i>
             </div>
         </div>
 

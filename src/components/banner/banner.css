@@ -1,3 +1,56 @@
-.banner img{
-    margin: 33px 103px;
+/* banner.css */
+
+.slider {
+    position: relative;
+    width: 80%;
+    padding: 32px 0;
+    overflow: hidden;
+    border-radius: 10px;  /* Optional: adds rounded corners */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;  /* Match the slider's border radius */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;  /* Adjust font size as needed */
+    transition: background-color 0.3s ease;
+    z-index: 1;  /* Ensure buttons are on top of the images */
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);  /* Change background on hover */
+}
+
+@media (max-width: 600px) {
+    button.prev, button.next {
+        padding: 8px;
+        font-size: 16px;
+    }
 }

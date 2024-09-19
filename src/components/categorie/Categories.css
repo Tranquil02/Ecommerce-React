@@ -1,0 +1,113 @@
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    background-color: white;
+    border-bottom: 2px solid rgb(162, 161, 161);
+  }
+  
+  /* Categories header */
+  .categories-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .categories-title {
+    color: #ef4444; /* Red color */
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+  
+  .top-heading{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Main heading */
+  .main-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid styles */
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .categories-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .categories-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  /* Category item styles */
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 9rem;
+    height: 9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .category-item:hover {
+    background-color: #f9f9f9; /* Light gray on hover */
+  }
+  
+  .category-item.highlight {
+    background-color: #ef4444; /* Red background */
+    color: white;
+  }
+  
+  /* Icon styles */
+  .icons {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Category label styles */
+  .category-label {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  /* Navigation styles */
+  .navigation {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #c8c5c5; /* Light gray on hover */
+  }
+  
+  .category-item:hover{
+    background-color: #ef4444; /* Red background */
+    color: white;
+  }
