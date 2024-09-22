@@ -1,0 +1,87 @@
+.teamPage {
+    background-color: #fff(204, 45%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin-bottom: 89px;
+}
+
+.team-container {
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden; /* Hide overflow to keep it tidy */
+}
+
+.grid {
+    display: flex; /* Use flexbox for horizontal alignment */
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+.team-container .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    min-width: 100%; /* Ensure a fixed width for each card */
+}
+
+.team-container .profile-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.member-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.member-role {
+    color: #4a5568;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.team-container .icon {
+    color: #000000;
+    text-decoration: none;
+}
+
+.team-container .social-icons i{
+    color: #000000;
+}
+
+.team-container .social-icons i:hover{
+    color: #f56565;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #cbd5e0;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+}
+
+.dot.active {
+    background-color: #f56565;
+}

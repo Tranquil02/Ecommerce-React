@@ -1,0 +1,115 @@
+/* CreateAccount.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb; /* Light gray */
+}
+
+.signup-card {
+    display: flex;
+    background-color: #ffffff; /* White */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1024px; /* Max width */
+    /* overflow: hidden; */
+}
+
+.image-section {
+    flex: 1;
+    background-color: #e0f2fe; /* Light blue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-section {
+    flex: 1;
+    padding: 32px; /* Padding */
+}
+
+.form-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #111827; /* Dark gray */
+}
+
+.form-section p {
+    color: #6b7280; 
+    margin-bottom: 36px;/* Gray */
+}
+
+.form-section .input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 2px solid rgb(166, 164, 164);
+    transition: border-color 0.2s;
+}
+
+.form-section .input:focus {
+    outline: none;
+    border-color: #01112b;
+    color: black; /* Blue */
+}
+
+.form-section .button {
+    width: 100%;
+    background-color: #ef4444; /* Red */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px; /* Rounded */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-section .button:hover {
+    background-color: #dc2626; /* Darker red */
+}
+
+.form-section .google-button {
+    width: 100%;
+    border: 1px solid #d1d5db; /* Gray */
+    padding: 12px;
+    border-radius: 4px; /* Rounded */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 16px;
+}
+
+.google-button img {
+    margin-right: 8px;
+    width: 1.2rem;
+}
+
+.google-button:hover {
+    background-color: #f3f4f6; /* Light gray */
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.login-link a {
+    color: #020b1a; /* Blue */
+    text-decoration: underline;
+}

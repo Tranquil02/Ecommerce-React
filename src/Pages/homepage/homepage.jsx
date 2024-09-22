@@ -1,5 +1,4 @@
 import React from "react";
-import { Navbar } from "../../components/navbar/navbar.jsx";
 import { Side } from "../../components/sideComponent/Side.jsx";
 import SalesComponent from "../../components/Sales/Sales.jsx";
 import "../homepage/homepage.css";
@@ -12,7 +11,6 @@ import Footer from "../../components/Footer/footer.jsx";
 function Homepage() {
   return (
     <>
-      <Navbar />
       <div className="firstContent">
         <Side />
         <ImageSlider showButtons="true" margin="auto 45px" width="800px"/>
@@ -24,7 +22,7 @@ function Homepage() {
       <SalesComponent saleName="Explore Our Products" saleDate="Our Products"/>
       {/* <NewProductGrid/> */}
       <Features/>
-      <Footer/>
+      
     </>
   );
 }

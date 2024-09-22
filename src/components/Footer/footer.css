@@ -39,6 +39,14 @@
     color: #ccc; /* Change color on hover */
 }
 
+.footer-section a:hover{
+    text-decoration: underline;
+}
+.footer-section  a{
+    text-decoration: none;
+    color: #ccc;
+}
+
 .subscribe-form {
     display: flex;
     margin-top: 10px;

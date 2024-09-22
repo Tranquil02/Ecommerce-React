@@ -22,20 +22,39 @@
   padding: 0;
 }
 
-.Navbar .options li {
-  margin: 5px 20px;
+.Navbar .options li  a{
+  margin: 10px 20px;
   font-size: 18px;
-  /* font-weight: 500; */
-  /* padding: 10px 0; */
   cursor: pointer;
+  padding: 5px 0;
   transition: color 0.3s;
+  text-decoration: none;
+  color: rgb(98, 97, 97);
 }
 
-.options li:hover {
+.options li a:hover {
   color: #ff6347; 
   font-weight: 500;
   border-bottom: 2px solid #ff6347;
 }
+
+/* Normal link style */
+.nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.Navbar .options li a.active-link {
+  /* text-decoration: underline; */
+  border-bottom: 3px solid #383737;
+  font-weight: bold;
+  color: #383737; /* Make sure this color stands out */
+}
+
+
 
 .search {
   position: relative;
@@ -68,13 +87,13 @@
   color: #ff6347;
 }
 
-.others {
+.options-other {
     display: flex;
     align-items: center;
-    margin-left: -15px;
+    /* margin-left: -15px; */
   }
   
-  .icon {
+  .Navbar .icon {
     margin-left: 30px;
     font-size: 25px;
     color: #343434;
@@ -82,6 +101,6 @@
     transition: color 0.3s;
   }
   
-  .icon:hover {
+  .Navbar .icon:hover {
     color: #ff6347; /* Change to your preferred hover color */
   }

@@ -1,0 +1,69 @@
+
+.our-story {
+    background-color: white;
+    color: #111111; /* Gray color */
+}
+
+.header {
+    padding: 24px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    color: #7d7d7d; /* Light gray */
+}
+
+.nav-link {
+    margin-right: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover {
+    color: #4a4a4a; /* Dark gray */
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+    }
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2.5rem; /* Equivalent to 5xl */
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-size: 1.125rem; /* Equivalent to lg */
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
